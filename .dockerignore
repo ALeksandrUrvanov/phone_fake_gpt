@@ -1,0 +1,22 @@
+# Данные обучения — не в контекст сборки (могут быть очень большими)
+train/
+**/train/
+
+# Python / IDE
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+*.egg-info/
+
+.git/
+.gitignore
+
+# Локальные данные на ПК (в образ не копируются и так; уменьшают контекст docker build)
+*.csv
+*.xlsx
+
+.env
+.env.*
